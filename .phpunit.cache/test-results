@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":122:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:2:{s:23:"MathTest::testFibonacci";d:0.024;s:23:"MathTest::testFactorial";d:0.004;}}}

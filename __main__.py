@@ -2,7 +2,7 @@ from client import ComposerClientFactory
 class main():
 
     def main():     
-        composer_client = ComposerClientFactory.create_real("C:/ProgramData/ComposerSetup/bin/composer", "C:/Users/rcastruc/OneDrive - Capgemini/Desktop/php-test", "coverage/report.xml")
+        composer_client = ComposerClientFactory.create_real("C:/ProgramData/ComposerSetup/bin/composer", "C:/Users/rcastruc/OneDrive - Capgemini/Desktop/php-test", "/target/coverage.xml")
         check, message = composer_client.install()
         print(check, message)
         if(check == True):

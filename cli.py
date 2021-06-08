@@ -93,7 +93,7 @@ class ComposerCliInterface(object):  # pragma: no cover
 
         return self.composer_cli.install(project_dir)
 
-    def uTest(self, project_dir,new_report_dir):
+    def uTest(self, project_dir, new_report_dir):
 
         return self.composer_cli.uTest(project_dir, new_report_dir)
     
@@ -151,9 +151,10 @@ class ComposerCli(object):
     def uTest(self, project_dir, new_report_dir):
         
         cmd = [
-            "\""+ project_dir + "/src/vendor/bin/phpunit"+"\"",
+            "\""+ project_dir + "/vendor/bin/phpunit"+"\"",
             "--coverage-clover",
-            new_report_dir
+            "\""+ project_dir + new_report_dir +"\""
+            
         ]
         return self.p__output(cmd)
 
